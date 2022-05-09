@@ -35,7 +35,7 @@ After adjusting the results for Thomas High School we can see that their scores 
 
 * Percentage Passing Math increased from 66.911315% to 93.272171%
 * Passing Reading increased from 69.663609% to 97.308869%
-* Overall Passing Percent decreased to 65.076453% to 90.948012%
+* Overall Passing Percent increased from 65.076453% to 90.948012%
 
 ## How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
  
@@ -57,6 +57,10 @@ There was no change in the results based on school size.  Because of the large s
 
 ## Scores by school type
 ![School Type PNG](https://github.com/MXV0921/School_District_Analysis/blob/main/Resources/School_type_summary.png)
-Similar to the school size sorting of data, the 
+Similar to the school size sorting of data, the results of this 'groupby' function is not greatly affected by the change in scores at Thomas high school.
+* After the formatting performed to eliminate decimal places, there is no change in any of the results.
+
 # Summary: 
-Summarize four changes in the updated school district analysis after reading and math scores for the ninth grade at Thomas High School have been replaced with NaNs.
+As a data analyst reading this code, my first question would be "Why are we manipulating the data by eliminating the scores of one grade, at one school, and then comparing that school's results to the rest of the district?"  When reviewing the results prior to adjusting, Thomas High School performed well below the average of the other Charter Schools.  A more accurate results to this comparative study would be to ignore the results of the ninth grade across the entire district.
+
+When we look at the results of individual schools, Thomas High has numbers that greatly improved.  When we look at the scores across the entire district , eliminating this one grade does not have much of an effect on the results.
